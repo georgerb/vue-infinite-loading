@@ -144,7 +144,7 @@ export default {
   mounted() {
     this.$watch('forceUseInfiniteWrapper', () => {
       this.scrollParent = this.getScrollParent();
-    }, { immediate: true });
+    }, { immediate: false });
 
     this.scrollHandler = (ev) => {
       if (this.status === STATUS.READY) {
